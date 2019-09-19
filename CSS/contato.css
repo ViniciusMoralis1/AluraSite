@@ -1,0 +1,87 @@
+legend,
+label[for="mensagem"]{
+	font-weight: bold;
+	margin-top: 1em;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    padding: .25em .5em;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+input:focus,
+textarea:focus {
+    background-color: #EEF5D2;
+}
+
+input:invalid {
+    box-shadow: 0 0 3px red;
+}
+
+button{
+	border: none;
+	font-family: "Open Sans Condensed", "Arial", sans-serif;
+	font-size: 110%;
+	padding: .3em .6em;
+	background-color: #3C1D3D;
+    color: #FDFDFD;
+    margin-left: auto;
+    margin-top: 1em;
+}
+button:hover,
+button:focus {
+    background-color: #EF1A2A;
+}
+
+#nome {
+    position: relative;
+}
+
+#nome::after {
+    content: "";
+    background-image: url(../imagens/usuario.png);
+    background-color: #4F4F4F;
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+    background-position: center;
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    top: 29%;
+    left: 0;
+}
+
+input[name="nome"] {
+    width: calc(100% - 2em);
+    position: relative;
+    left: 2em;
+}
+
+#email {
+    position: relative;
+}
+
+#email:before {
+    content: "";
+    background-color: #3F3D3C;
+    background-image: url(../imagens/email.png);
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+    background-position: center;
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    top: 46%;
+    left: 0;
+}
+input[name=email] {
+    width: calc(100% - 2em);
+    position: relative;
+    left: 2em;
+}

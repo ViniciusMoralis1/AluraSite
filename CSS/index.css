@@ -1,0 +1,332 @@
+.blog a:hover + .inicio-post,
+.blog a:focus + .inicio-post {
+	display: block;
+}   
+
+.botao-index {
+	text-decoration: none;
+	transition: .5s;
+}
+
+.botao-index:focus,
+.botao-index:hover {
+	background-color: #C54974;
+	color: white;
+	box-shadow: 0 0 3em #FA9;
+}
+
+.blog a:hover,
+.blog a:focus {
+	background-color: #F2FFFC;
+	color: #F26;
+	width: 25em;
+}
+
+.inicio-post {
+	display: none;
+	background-color: #F2FFFC;
+	color: black;
+	position: absolute;
+	top: 3.9em;
+	height: 8.4ch;
+	width: 75ch;
+	padding: 2em 2em 6em 2em;
+	right: 9.5em;
+	border-radius: 1.5%;
+}
+
+span > em{
+	animation: flutuar 1.5s infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+	position: relative;
+}
+
+span>em:hover{
+	animation-play-state: paused;
+}
+
+@keyframes flutuar{
+	from {
+		top: -5px;
+	}
+	to {
+		top: 5px;
+	}
+}
+
+#banner-twitter {
+	box-sizing: border-box;
+	position: absolute;
+	top: 0;
+	right: 0;
+	transform-origin: 0 0;
+	transform: translate(calc(.707 * (3.5em - 100%) + 100%), calc(-.707 * 3.5em)) rotate(45deg);
+	width: 14em;
+	line-height: 1;
+	padding: 1em 0;
+
+	text-align: center;
+	text-decoration: none;
+	background-color: #3C1D3D;
+	color: white;
+	border: .40em solid black;
+
+	font-size: 1.1em;
+	font-family: "Open Sans Condensed", sans-serif;
+	animation: aparece 0.5s;
+	animation-delay: 0.5s;
+	animation-fill-mode: backwards;
+}
+
+header{
+	position: relative; 
+}
+
+.palavras-flutuantes {
+	color: rgba(255, 127, 127, 0.6);
+	font-family: "Shadows Into Light";
+	font-size: 122%;
+	perspective: 6px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	animation: aparece 1.5s;
+}
+
+@keyframes aparece {
+	from {
+		opacity: .1;
+		transform: scale(0.01);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+.palavras-flutuantes li {
+	font-size: 300%;
+}
+
+.eficiencia {
+	top: 35%;
+	right: 33%;
+	transform: translate(2.4em, 1.2em) rotate(2deg) translateZ(3px) scale(0.32);
+}
+
+.boas-praticas {
+	top: 60%;
+	left: 22%;
+	transform: translate(4.5em,0.7em) skew(10deg) rotate(2deg) translateZ(2px) scale(0.3);
+}
+
+.codigo-limpo {
+	top: 33%;
+	right: 60%;
+	transform: translate(-3em, -1em) translateZ(1px) rotate(5.6deg) scale(0.3);
+}
+
+.css3 {
+	top: 36%;
+	left: 35%;
+	transform: translate(-4.8em, -3em) translateZ(2px) rotate(2deg) scale(0.35);
+}
+
+.html5 {
+	top: 31%;
+	right: 16.5%;
+	transform: translate(-3.8em, -3.2em) translateZ(3px) rotate(-5deg) scale(0.29);
+}
+
+.javascript {
+	top: 9%;
+	right: 29%;
+	transform: translate(2.3em, -5.3em) translateZ(2px) rotate(-6deg) scale(0.34);
+}
+
+.acessibilidade {
+	top: 33%;
+	left: 19%;
+	transform: translate(-3em, -7.7em) translateZ(1px) rotate(-4deg) scale(0.45);
+}
+
+.responsivo {
+	top: 17.3%;
+	right: 20%;
+	transform: translate(3.3em,-6.95em) translateZ(1px) rotate(2deg) scale(0.32);
+}
+
+.otimizacoes {
+	top: 14%;
+	left: 28%;
+	transform: translate(4.38em,-8.65em) translateZ(2px) rotate(3deg) scale(0.35); 
+}
+
+.agilidade {
+	top: 57.5%;
+	right: 30.1%; 
+	transform: translate(-1.7em,-10.45em) translateZ(3.2px) rotate(-3deg) scale(0.32);
+}
+
+.design { 
+	top: 50%;
+	right: 20.7%;
+	transform: translate(-5em,-12em) translateZ(1px) skew(-12deg) scale(0.35);
+}
+
+.foto-home {
+	height: 200px;
+	box-shadow: 2px 2px #000;
+}
+
+.saudacao p {
+	font-size: 1.5em;
+	color: #99A;
+	line-height: 1;
+	padding: 2em;
+}
+
+.saudacao-inicio {
+	font-size: 3em;
+	color: #889;
+}
+
+.saudacao-ultima-linha {
+	text-align: right;
+	display: block;
+}
+
+.saudacao strong {
+	font-size: 2em;
+	color: #000;
+}
+
+.saudacao em {
+	color: #851944;
+	font-size: 4em;
+	display: inline-block;
+	transform: skew(-9deg) rotate(-6deg);
+}
+
+.botao-index {
+	font-size: 1.25em;
+	background-color: #851944;
+	color: #FFF;
+	padding: .5em;
+	width: 40ch;
+	margin: 2em auto;
+	display: block;
+	text-align: center;
+	box-shadow: 0 0 0 .18em #000;
+}
+
+.secao-inicio {
+	padding: 2em;
+}
+
+.secao-inicio h2 {
+	font-size: 3em;
+	text-transform: uppercase;
+	margin-bottom: .5em;
+	text-shadow: 2px 2px #000;
+}
+
+.trabalhos {
+	background-color: #3C1D3D;
+	border-top: .5em solid #000;
+	border-bottom: .5em solid #000;
+	background-image: linear-gradient(135deg, 
+								transparent,
+								transparent 14px,
+								rgba(0,0,0,0.1) 14px,
+								rgba(0,0,0,0.1) 15px,
+								transparent 15px,
+								transparent);
+	background-size: 20px 20px;
+	background-attachment: fixed;
+}
+
+.trabalhos h2 {
+	color: #FFF;
+}
+
+.trabalhos ul {
+	display: flex;
+}
+
+.trabalhos li {
+	flex: 1;
+	border: .4em solid #000;
+}
+
+.trabalhos img {
+	width: 100%;
+	display: block;
+}
+
+.blog {
+	background-color: #999;
+	color: #FFF;
+	border-bottom: .5em solid #851944;
+	position: relative;
+	background-image: linear-gradient(45deg,
+									transparent,
+									transparent 14px,
+									rgba(235,235,235,.1) 14px,
+									rgba(235,235,235,.1) 15px,
+									transparent 15px,
+									transparent);
+	background-size: 20px 20px;
+	background-attachment: fixed;
+}
+
+.blog small {
+	position: relative;
+
+
+	top: -2em;
+}
+
+.blog li a {
+	color: #FCF;
+	padding: .5em;
+	display: block;
+}
+
+footer {
+	background-color: #000;
+	color: #FFF;
+	padding: 2em;
+}
+
+footer h2 {
+	font-size: 3em;
+}
+
+footer a {
+	color: #F99;
+}
+
+main {
+	width: 100%;
+	padding-bottom: 0;
+	float: none;
+}
+
+body {
+	display: block;
+}
+
+.trabalhos li:first-child {
+    order: 2;
+    transform: scale(1.2);
+}
+.trabalhos li:nth-child(2) {
+    order: 1;
+}
+.trabalhos li:last-child {
+    order: 3;
+}

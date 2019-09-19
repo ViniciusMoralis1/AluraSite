@@ -1,0 +1,94 @@
+.citacao-bio {
+    background-color: #D9E5E3;
+    border: .5em solid #C2CCCA;
+    padding: 1em;
+    margin: 1em 2em;
+    width: 30ch;
+    box-sizing: border-box;
+    transition: transform 1s ease-in-out, box-shadow 1s;
+    transition-delay: 1s,0s;
+}
+
+.citacao-bio > p{
+    position: relative;
+}
+
+.citacao-bio::before{
+    content: '"';
+    font-size: 10em;
+    color: #BBB; 
+    transform: rotate(3deg);
+    position: absolute;
+    line-height: .7;
+}
+
+
+.citacao-bio:hover:nth-of-type(odd),
+.citacao-bio:focus:nth-of-type(odd){
+    transform: scale(1.2);
+    transform: rotate(3deg);
+    box-shadow: 0 0 0 9999em rgba(0,0,0,0.5);
+}
+
+.citacao-bio:hover:nth-of-type(even),
+.citacao-bio:focus:nth-of-type(even){
+    transform: scale(1.2);
+    transform: rotate(-3deg);
+    box-shadow: 0 0 0 9999em rgba(0,0,0,0.5);    
+}
+
+.citacao-bio:nth-of-type(even) {
+    float: left;
+    margin-left: 0;
+}
+
+.citacao-bio:nth-of-type(odd) {
+    float: right;
+    margin-right: 0;
+}
+
+.container > p:first-letter{
+    font-size: 150%;
+    color: #3C1D3D;
+    font-weight: bold;
+    text-shadow: 1px 1px #000;
+    margin-right: .05ch;
+    line-height: 1;
+}
+
+th {
+    background-color: #B2ADAA;
+    border: 3px solid white;
+    padding: 1em;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+td {
+    background-color: #EEEEEE;
+    border: 3px solid white;
+    padding: 1em;
+
+}
+
+thead > tr > th {
+
+    background-color: #851944;
+    border: 3px solid white;
+    padding: 1em;
+    color: #FFFFFF;
+    font-weight: bold;
+
+}
+
+table {
+    margin: 1em 0;
+    border-collapse: separate;
+    border-spacing: .2em;
+}
+
+td[colspan="2"] {
+    font-style: italic;
+    text-align: center;
+    vertical-align: middle;
+}
